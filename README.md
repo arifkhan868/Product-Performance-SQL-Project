@@ -47,8 +47,8 @@ This recruiter-friendly SQL project highlights product-level performance and bus
 - Structured & documented code
 - Portfolio presentation ready
 
-SQL: product_report_view.sql
-
+## SQL: product_report_view.sql
+```
 CREATE OR REPLACE VIEW gold.product_report AS
 WITH Base_Query AS (
     SELECT
@@ -109,7 +109,7 @@ SELECT
     CASE WHEN total_revenue = 0 THEN NULL ELSE (total_revenue - total_cost) END AS gross_margin,
     CASE WHEN total_revenue = 0 THEN NULL ELSE ((total_revenue - total_cost) / NULLIF(total_revenue,0)) END AS margin_pct
 FROM product_aggregation;
-
+```
 Data Dictionary: data_dictionary.md
 • gold.sales
     - order_number: Unique order ID

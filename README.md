@@ -1,4 +1,5 @@
 # Product Performance Analysis SQL Project
+---
 ### Project Overview:
 This is a full, recruiter-friendly GitHub repository for a Product Performance & Revenue Segmentation SQL project.
 It contains all necessary files for a complete portfolio presentation including SQL, documentation, examples, LinkedIn copy, and a clear README.

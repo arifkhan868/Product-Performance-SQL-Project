@@ -4,7 +4,7 @@ This is a full, recruiter-friendly GitHub repository for a Product Performance &
 It contains all necessary files for a complete portfolio presentation including SQL, documentation, examples, LinkedIn copy, and a clear README.
 Designed to demonstrate both technical and business analytics skills in a way recruiters immediately understand and value.
 
-Repository Structure :
+### Repository Structure :
 ```
 product-performance-analysis-sql/
 ├─ sql/

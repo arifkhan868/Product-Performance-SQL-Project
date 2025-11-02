@@ -1,12 +1,52 @@
-# Product Performance Analysis SQL Project 
-Overview
-This recruiter-friendly project demonstrates SQL skills, business analytics, and KPI-driven decision-making. 
-It calculates essential metrics such as revenue, order frequency, customer reach, product lifespan, 
-recency, average order revenue, average monthly revenue, and profitability metrics including 
-total cost, gross margin, and margin percentage. 
-The project is designed to be portfolio-ready and easy for recruiters to understand.
+Full GitHub Repo - Product Performance Analysis SQL Project
+Project Overview
+This is a full, recruiter-friendly GitHub repository for a Product Performance & Revenue Segmentation SQL project.
+It contains all necessary files for a complete portfolio presentation including SQL, documentation, examples, LinkedIn copy, and a clear README.
+Designed to demonstrate both technical and business analytics skills in a way recruiters immediately understand and value.
 
-SQL View Code (PostgreSQL)
+Repository Structure
+
+product-performance-analysis-sql/
+├─ sql/
+│  └─ product_report_view.sql      # Production-ready SQL view
+├─ docs/
+│  └─ data_dictionary.md          # Field definitions & assumptions
+├─ examples/
+│  └─ sample_queries.sql          # Example queries & results
+├─ README.md                      # Clear, recruiter-friendly description
+├─ linkedin_post.md               # Ready-to-post copy for visibility
+├─ CONTRIBUTING.md                # Contribution guidelines
+├─ LICENSE                        # MIT License or preferred
+└─ .gitignore                     # Ignore unnecessary files
+
+README.md
+# Product Performance Analysis (SQL)
+
+This recruiter-friendly SQL project highlights product-level performance and business intelligence skills.
+
+## Project Summary
+- Production-ready SQL view analyzing product performance.
+- Calculates key KPIs: revenue, orders, quantity sold, customer reach, recency, lifespan, average order revenue, average monthly revenue, gross margin.
+- Segments products into Low, Mid, High Performers based on revenue.
+- Ready for BI integration (Power BI / Tableau).
+
+## Skills Demonstrated
+- SQL & Data Modeling: CTEs, Joins, Aggregations
+- Business Analytics: KPI calculation, product segmentation
+- Data Storytelling: Clear documentation & results
+- Production Thinking: Reusable view design
+
+## Quick Start
+1. Clone repository
+2. Run SQL view in PostgreSQL
+3. Explore results
+
+## Why Recruiter-Friendly
+- Highlights business impact
+- Structured & documented code
+- Portfolio presentation ready
+
+SQL: product_report_view.sql
 
 CREATE OR REPLACE VIEW gold.product_report AS
 WITH Base_Query AS (
@@ -69,8 +109,7 @@ SELECT
     CASE WHEN total_revenue = 0 THEN NULL ELSE ((total_revenue - total_cost) / NULLIF(total_revenue,0)) END AS margin_pct
 FROM product_aggregation;
 
-Data Dictionary
-
+Data Dictionary: data_dictionary.md
 • gold.sales
     - order_number: Unique order ID
     - order_date: Transaction date
@@ -94,12 +133,7 @@ Data Dictionary
     - gross_margin: Revenue − Cost
     - margin_pct: Profitability ratio
 
-Skills Demonstrated
-• SQL & Data Modeling: CTEs, Joins, Aggregations
-• Business Analytics: KPI calculation, product segmentation
-• Data Storytelling: Clear documentation & structured presentation
-• Production Thinking: Reusable view design
-LinkedIn Post (Optional)
+LinkedIn Post: linkedin_post.md
 🚀 Product Performance & Revenue Segmentation (SQL Project)
 
 I built a recruiter-friendly SQL view to analyze product-level performance — segmenting products into High-, Mid-, and Low-performers and calculating business-critical KPIs like recency, avg order revenue, avg monthly revenue, and gross margin.
@@ -110,3 +144,4 @@ I built a recruiter-friendly SQL view to analyze product-level performance — s
 • Ready for Power BI / Tableau dashboards
 
 GitHub Repository Link: (add after upload)
+

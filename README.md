@@ -110,7 +110,7 @@ SELECT
     CASE WHEN total_revenue = 0 THEN NULL ELSE ((total_revenue - total_cost) / NULLIF(total_revenue,0)) END AS margin_pct
 FROM product_aggregation;
 ```
-Data Dictionary: data_dictionary.md
+## Data Dictionary: data_dictionary.md
 • gold.sales
     - order_number: Unique order ID
     - order_date: Transaction date

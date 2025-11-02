@@ -31,18 +31,22 @@ This recruiter-friendly SQL project highlights product-level performance and bus
 - Segments products into Low, Mid, High Performers based on revenue.
 - Ready for BI integration (Power BI / Tableau).
 
+
 ## Skills Demonstrated
+
 - SQL & Data Modeling: CTEs, Joins, Aggregations
 - Business Analytics: KPI calculation, product segmentation
 - Data Storytelling: Clear documentation & results
 - Production Thinking: Reusable view design
 
 ## Quick Start
+
 1. Clone repository
 2. Run SQL view in PostgreSQL
 3. Explore results
 
 ## Why Recruiter-Friendly
+
 - Highlights business impact
 - Structured & documented code
 - Portfolio presentation ready
@@ -111,6 +115,7 @@ SELECT
 FROM product_aggregation;
 ```
 ## Data Dictionary: data_dictionary.md
+```
 • gold.sales
     - order_number: Unique order ID
     - order_date: Transaction date
@@ -118,14 +123,18 @@ FROM product_aggregation;
     - sales_amount: Revenue per line item
     - quantity: Units sold
     - customer_key: Unique customer identifier
-
+```
+---
+```
 • gold.products
     - product_key: Unique product ID
     - product_name: Name of product
     - category: Product category
     - subcategory: Product subcategory
     - cost: Unit cost / COGS
-
+```
+---
+```
 • gold.product_report (Generated View)
     - product_segment: Low/Mid/High performance classification
     - recency: Months since last sale
@@ -133,7 +142,7 @@ FROM product_aggregation;
     - avg_monthly_spend: Revenue / active months
     - gross_margin: Revenue − Cost
     - margin_pct: Profitability ratio
-
+```
 LinkedIn Post: linkedin_post.md
 🚀 Product Performance & Revenue Segmentation (SQL Project)
 

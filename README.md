@@ -18,8 +18,8 @@ product-performance-analysis-sql/
 ├─ CONTRIBUTING.md                # Contribution guidelines
 ├─ LICENSE                        # MIT License or preferred
 └─ .gitignore                     # Ignore unnecessary files
-```
 README.md
+```
 # Product Performance Analysis (SQL)
 
 This recruiter-friendly SQL project highlights product-level performance and business intelligence skills.
